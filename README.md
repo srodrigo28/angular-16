@@ -45,3 +45,21 @@ imports: [
 ```
 https://www.youtube.com/watch?v=rIHNjX4ucvk
 ```
+
+#### Roteando
+
+* app.module.ts
+``` adicionar
+imports: [
+    RouterOutlet,
+    CommonModule,
+  ],
+```
+
+* app-routing.module.ts
+```
+const routes: Routes = [
+  { path: 'cadastro', component: FormularioComponent },
+  { path: 'calcular', component: CalculatorComponent },
+];
+```
