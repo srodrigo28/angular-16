@@ -1,0 +1,26 @@
+<form [formGroup]="form" class="container mt-5 bg-dark mb-5">
+    <div class="row pb-5">
+        <div class="md-3 w-25">
+            <label for="cep" class="form-label">Cep</label>
+            <input formControlName="cep"  type="text" class="form-control" id="cep" placeholder="Digite seu cep">
+        </div>
+        <div class="md-3 col">
+            <label for="logradouro" class="form-label">Logradouro</label>
+            <input formControlName="logradouro" readonly type="text" class="form-control" id="logradouro" placeholder="aguarde">
+        </div>
+        <div class="md-3 col">
+            <label for="bairro" class="form-label">Bairro</label>
+            <input formControlName="bairro" readonly type="text" class="form-control" id="bairro" placeholder="aguarde">
+        </div>
+        <div class="md-3 col">
+            <label for="cidade" class="form-label">Cidade</label>
+            <input formControlName="cidade" readonly type="text" class="form-control" id="cidade" placeholder="aguarde">
+        </div>
+        <div class="md-3 col">
+            <label for="estado" class="form-label">Estado</label>
+            <input formControlName="estado" readonly type="text" class="form-control" id="estado" placeholder="aguarde">
+        </div>
+    </div>
+</form>
+
+<router-outlet></router-outlet>
